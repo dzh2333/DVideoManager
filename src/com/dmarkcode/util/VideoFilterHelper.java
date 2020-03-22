@@ -74,6 +74,7 @@ public class VideoFilterHelper {
             return null;
         }
         List<File> files = FileUtils.readFile(sourcePath);
+        LogUtils.d("获得了文件数量为" + files.size());
         for (int i = 0; i < files.size(); i++){
             File tmpFile = files.get(i);
             if (tmpFile.getName().contains(format)){
@@ -84,6 +85,86 @@ public class VideoFilterHelper {
         }
 
         return res;
+    }
+
+    /**
+     * 清楚所有种子
+     */
+    public static void cleanAllSpeed(String sourcePath){
+        File file = new File(sourcePath);
+        if (!file.exists()){
+            LogUtils.d("文件" + sourcePath + "不存在");
+            return;
+        }
+        List<File> files = FileUtils.readFile(sourcePath);
+        LogUtils.d("获得了文件数量为" + files.size());
+        for (int i = 0; i < files.size(); i++){
+            File tmpFile = files.get(i);
+            if (tmpFile.getName().contains(".torrent")){
+                tmpFile.delete();
+                LogUtils.d("清楚了垃圾" + tmpFile.getName());
+            }
+        }
+    }
+
+    /**
+     * 清除广告垃圾
+     * @param path
+     */
+    public static void cleanAllAdRuddish(String path){
+        File file = new File(path);
+        if (!file.exists()){
+            LogUtils.d("文件" + path + "不存在");
+            return;
+        }
+        List<File> files = FileUtils.readFile(path);
+        LogUtils.d("获得了文件数量为" + files.size());
+        for (int i = 0; i < files.size(); i++){
+            File tmpFile = files.get(i);
+            for (int j = 0; j < CleanHelper.rubbish.length; j++){
+                if (tmpFile.getName().equals(CleanHelper.rubbish[j])){
+                    tmpFile.delete();
+                    LogUtils.d("清除了指定文件" + tmpFile.getName() + "路径为" + tmpFile.getAbsolutePath());
+                }
+            }
+        }
+    }
+
+    public static void cleanTargetNameInPath(String path, String targetNameFile){
+        File file = new File(path);
+        if (!file.exists()){
+            LogUtils.d("文件" + path + "不存在");
+            return;
+        }
+        List<File> files = FileUtils.readFile(path);
+        LogUtils.d("获得了文件数量为" + files.size());
+        for (int i = 0; i < files.size(); i++){
+            File tmpFile = files.get(i);
+            if (tmpFile.getName().equals(targetNameFile)){
+                tmpFile.delete();
+                LogUtils.d("清除了指定文件" + tmpFile.getName() + "路径为" + tmpFile.getAbsolutePath());
+            }
+        }
+    }
+
+    /**
+     * 清理迅雷失效文件（未下完，不想下的垃圾）
+     */
+    public static void cleanXunLeiFailedRes(String path){
+        File file = new File(path);
+        if (!file.exists()){
+            LogUtils.d("文件" + path + "不存在");
+            return;
+        }
+        List<File> files = FileUtils.readFile(path);
+        LogUtils.d("获得了文件数量为" + files.size());
+        for (int i = 0; i < files.size(); i++){
+            File tmpFile = files.get(i);
+            if (tmpFile.getName().contains(".bt.xltd")){
+                tmpFile.delete();
+                LogUtils.d("清除了指定文件" + tmpFile.getName() + "路径为" + tmpFile.getAbsolutePath());
+            }
+        }
     }
 
 }

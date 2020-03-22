@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32fa9049-2b50-4854-8c3d-13a621e87148" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/DVideoManager/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/DVideoManager/com/dmarkcode/BootService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/DVideoManager/com/dmarkcode/entity/CategoryBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/DVideoManager/com/dmarkcode/entity/VideoBean.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/DVideoManager/com/dmarkcode/util/FileUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/DVideoManager/com/dmarkcode/util/LogUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/DVideoManager/com/dmarkcode/util/VideoFilterHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/dmarkcode/util/LogUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/dmarkcode/util/CleanHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DVideoManager/com/dmarkcode/BootService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DVideoManager/com/dmarkcode/BootService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DVideoManager/com/dmarkcode/util/FileUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DVideoManager/com/dmarkcode/util/FileUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DVideoManager/com/dmarkcode/util/VideoFilterHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DVideoManager/com/dmarkcode/util/VideoFilterHelper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dmarkcode/BootService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dmarkcode/BootService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/dmarkcode/entity/VideoBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dmarkcode/entity/VideoBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dmarkcode/util/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dmarkcode/util/FileUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dmarkcode/util/VideoFilterHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dmarkcode/util/VideoFilterHelper.java" afterDir="false" />
     </list>
@@ -85,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584878768353</updated>
-      <workItem from="1584878771397" duration="9581000" />
+      <workItem from="1584878771397" duration="14336000" />
     </task>
     <servers />
   </component>
@@ -98,38 +92,38 @@
     </state>
     <state x="1020" y="318" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584890968132" />
     <state x="4605" y="236" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/3840.0.1920.1040@3840.0.1920.1040" timestamp="1584887738048" />
-    <state width="2517" height="1002" key="GridCell.Tab.0.bottom" timestamp="1584891721831">
+    <state width="2517" height="1052" key="GridCell.Tab.0.bottom" timestamp="1584896616062">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="1002" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584891721831" />
-    <state width="2517" height="1002" key="GridCell.Tab.0.center" timestamp="1584891721831">
+    <state width="2517" height="1052" key="GridCell.Tab.0.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584896616062" />
+    <state width="2517" height="1052" key="GridCell.Tab.0.center" timestamp="1584896616062">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="1002" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584891721831" />
-    <state width="2517" height="1002" key="GridCell.Tab.0.left" timestamp="1584891721831">
+    <state width="2517" height="1052" key="GridCell.Tab.0.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584896616062" />
+    <state width="2517" height="1052" key="GridCell.Tab.0.left" timestamp="1584896616062">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="1002" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584891721831" />
-    <state width="2517" height="1002" key="GridCell.Tab.0.right" timestamp="1584891721831">
+    <state width="2517" height="1052" key="GridCell.Tab.0.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584896616062" />
+    <state width="2517" height="1052" key="GridCell.Tab.0.right" timestamp="1584896616062">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="1002" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584891721831" />
-    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1584891022499">
+    <state width="2517" height="1052" key="GridCell.Tab.0.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584896616062" />
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1584896366863">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584891022499" />
-    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1584891022499">
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584896366863" />
+    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1584896366863">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584891022499" />
-    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1584891022499">
+    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584896366863" />
+    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1584896366863">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584891022499" />
-    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1584891022499">
+    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584896366863" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1584896366863">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584891022499" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400/3840.0.1920.1040@0.0.2560.1400" timestamp="1584896366863" />
     <state x="665" y="184" key="SettingsEditor" timestamp="1584879150402">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

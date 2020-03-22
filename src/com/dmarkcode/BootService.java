@@ -22,7 +22,12 @@ public class BootService {
     public static void mainInit(){
 //        List<VideoBean> videoBeanList = VideoFilterHelper.getAllVideo("J:\\");
 //        List<VideoBean> videoBeanList = VideoFilterHelper.videoFilterForFormat("J:\\", ".mp4");
-        List<VideoBean> videoBeanList = VideoFilterHelper.videoFilterForName("J:\\", "GVG");
+//        List<VideoBean> videoBeanList = VideoFilterHelper.videoFilterForName("J:\\", "GVG");
+//        VideoFilterHelper.cleanAllSpeed("J:\\");
+//        VideoFilterHelper.cleanAllAdRuddish("J:\\");
+//        VideoFilterHelper.cleanXunLeiFailedRes("J:\\");
+
+
     }
 
 
