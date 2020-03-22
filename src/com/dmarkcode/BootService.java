@@ -1,5 +1,10 @@
 package com.dmarkcode;
 
+import com.dmarkcode.entity.VideoBean;
+import com.dmarkcode.util.VideoFilterHelper;
+
+import java.util.List;
+
 /**
  * 启动的主程序
  * @author DMark
@@ -15,7 +20,9 @@ public class BootService {
      * 数据搜索使用哈希算法
      */
     public static void mainInit(){
-
+//        List<VideoBean> videoBeanList = VideoFilterHelper.getAllVideo("J:\\");
+//        List<VideoBean> videoBeanList = VideoFilterHelper.videoFilterForFormat("J:\\", ".mp4");
+        List<VideoBean> videoBeanList = VideoFilterHelper.videoFilterForName("J:\\", "GVG");
     }
 
 
