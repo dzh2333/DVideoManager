@@ -19,7 +19,7 @@ public class VideoFilterHelper {
      * @param sourcePath
      * @return
      */
-    public static List<VideoBean> getAllVideo(String sourcePath){
+    public synchronized static List<VideoBean> getAllVideo(String sourcePath){
         List<VideoBean> res = new ArrayList<>();
 
         File file = new File(sourcePath);
@@ -36,7 +36,7 @@ public class VideoFilterHelper {
         return res;
     }
 
-    public static List<VideoBean> videoFilterForName(String sourcePath, String name){
+    public synchronized static List<VideoBean> videoFilterForName(String sourcePath, String name){
         List<VideoBean> res = new ArrayList<>();
 
         File file = new File(sourcePath);
@@ -65,7 +65,7 @@ public class VideoFilterHelper {
      * @param format
      * @return
      */
-    public static List<VideoBean> videoFilterForFormat(String sourcePath, String format){
+    public synchronized static List<VideoBean> videoFilterForFormat(String sourcePath, String format){
         List<VideoBean> res = new ArrayList<>();
 
         File file = new File(sourcePath);
@@ -90,7 +90,7 @@ public class VideoFilterHelper {
     /**
      * 清楚所有种子
      */
-    public static void cleanAllSpeed(String sourcePath){
+    public synchronized static void cleanAllSpeed(String sourcePath){
         File file = new File(sourcePath);
         if (!file.exists()){
             LogUtils.d("文件" + sourcePath + "不存在");
@@ -111,7 +111,7 @@ public class VideoFilterHelper {
      * 清除广告垃圾
      * @param path
      */
-    public static void cleanAllAdRuddish(String path){
+    public synchronized static void cleanAllAdRuddish(String path){
         File file = new File(path);
         if (!file.exists()){
             LogUtils.d("文件" + path + "不存在");
@@ -130,7 +130,7 @@ public class VideoFilterHelper {
         }
     }
 
-    public static void cleanTargetNameInPath(String path, String targetNameFile){
+    public synchronized static void cleanTargetNameInPath(String path, String targetNameFile){
         File file = new File(path);
         if (!file.exists()){
             LogUtils.d("文件" + path + "不存在");

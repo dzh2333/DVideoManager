@@ -1,8 +1,11 @@
 package com.dmarkcode;
 
 import com.dmarkcode.entity.VideoBean;
+import com.dmarkcode.ui.BasePanle;
+import com.dmarkcode.ui.MainPanel;
 import com.dmarkcode.util.VideoFilterHelper;
 
+import javax.swing.*;
 import java.util.List;
 
 /**
@@ -23,10 +26,12 @@ public class BootService {
 //        List<VideoBean> videoBeanList = VideoFilterHelper.getAllVideo("J:\\");
 //        List<VideoBean> videoBeanList = VideoFilterHelper.videoFilterForFormat("J:\\", ".mp4");
 //        List<VideoBean> videoBeanList = VideoFilterHelper.videoFilterForName("J:\\", "GVG");
-//        VideoFilterHelper.cleanAllSpeed("J:\\");
-//        VideoFilterHelper.cleanAllAdRuddish("J:\\");
-//        VideoFilterHelper.cleanXunLeiFailedRes("J:\\");
 
+
+
+
+        BasePanle panel = new MainPanel();
+        panel.init();
 
     }
 
